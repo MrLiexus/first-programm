@@ -31,6 +31,8 @@ while luck !='q' :
              print("Thank you, this will be saved in the root folder.")
          elif numTel == 'N' :
              print("please enter your phone number")
+         else:
+             print("you're smarter than I thought...")
      elif do == 2:
          input("your address:")
          num1 = input("are you sure this is your home address? (Y/N)")
@@ -38,6 +40,8 @@ while luck !='q' :
             print ("Thank you, this will be saved in the root folder.")
          elif num1 == 'N' :
              print ("please re-enter your address")
+         else:
+             print ("you're smarter than I thought...")
      elif do == 3:
          print("yeah, yeah, keep fucking it up.")
  elif luck == 'N' :
