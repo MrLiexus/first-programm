@@ -1,0 +1,46 @@
+#cooding: utf 8
+import os
+import sys
+import psutil #этот модуль сторонний(установлен)
+import shutil
+
+
+print ("who am I?")
+print ("hello people")
+print ("my name is Lik")
+print ("my 13")
+name = input("who are you?:")
+
+print (name, "I'm glad to see you here.")
+luck = ''
+# PEP-8
+while luck !='q' :
+ luck = input ("would you like to work now? (Y/N/q)")
+ if  luck == 'Y' :
+     print ("all right, then let's go!")
+     print ("answer my question with numbers")
+     print ("you can:")
+     print (" [1] - tell me your phone number")
+     print (" [2] - say your home address")
+     print (" [3] - just enjoy life!")
+     do = int(input("enter the number of the action: "))
+     if do == 1:
+         input("your phone number:")
+         numTel = input("are you sure this is your phone number? (Y/N)")
+         if numTel == 'Y' :
+             print("Thank you, this will be saved in the root folder.")
+         elif numTel == 'N' :
+             print("please enter your phone number")
+     elif do == 2:
+         input("your address:")
+         num1 = input("are you sure this is your home address? (Y/N)")
+         if num1 == 'Y' :
+            print ("Thank you, this will be saved in the root folder.")
+         elif num1 == 'N' :
+             print ("please re-enter your address")
+     elif do == 3:
+         print("yeah, yeah, keep fucking it up.")
+ elif luck == 'N' :
+     print("Then let me in next time, okay?")
+ else:
+     print("you're smarter than I thought...")
